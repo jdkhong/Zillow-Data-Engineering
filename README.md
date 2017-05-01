@@ -3,8 +3,9 @@ Predictive Analytics with Real Estate Data
 
 #### Obtaining Data
 Scrape Zillow's Real Estate Data:
-i. Current For Sale Properties
-ii. Recently Sold Properties
+
+i) Current For Sale Properties
+ii) Recently Sold Properties
 
 ## Zillow Automated Scraper
 ![](https://i.imgur.com/E6RI8Hm.gif)
