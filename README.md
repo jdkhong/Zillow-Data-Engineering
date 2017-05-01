@@ -17,9 +17,8 @@ Unemployment by zip code -> mapped by County data
    4. **Synthesize**: Some sort of batch process/transformation with Spark
    5. **Show**: A way to communicate the results of your pipeline such as a static website or flask app
 
-2. Take a look at each of the 8 desired properties of a big data system and answer the following two questions:
-    1. How does my system have this property?
-    2. How does my system fall short and how could it be improved?
+ 1. How does my system have this property?
+ 2. How does my system fall short and how could it be improved?
 
 ## Zillow Automated Scraper
 ![](https://i.imgur.com/E6RI8Hm.gif)
