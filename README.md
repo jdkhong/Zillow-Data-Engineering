@@ -2,7 +2,7 @@
 Predictive Analytics with Real Estate Data
 
 #### Obtaining Data
-1) Scrape Zillow's Real Estate Data:
+Scrape Zillow's Real Estate Data:
 i. Current For Sale Properties
 ii. Recently Sold Properties
 
