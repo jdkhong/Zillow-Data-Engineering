@@ -11,14 +11,11 @@ Historical Real Estate sales by zip code since 2012
 Unemployment by zip code -> mapped by County data
 
 #### Big Data
-   1. **Stream**: A way to continuously query data from a website or API (at least one, but preferably two sources of data)
-   2. **Store**: Storage for all unstructured data in its entirety
-   3. **Structure**: Separate storage for structured data in 3NF (similar to how we stored raw tweets in s3 and structured tables in postgres)
-   4. **Synthesize**: Some sort of batch process/transformation with Spark
-   5. **Show**: A way to communicate the results of your pipeline such as a static website or flask app
-
- 1. How does my system have this property?
- 2. How does my system fall short and how could it be improved?
+   1. **Stream**: Zillow Data Scraping with daily crontab schedule.
+   2. **Store**: Storage for unstructed HTML data for each listing.
+   3. **Structure**: Separate storage for structured data for each listing in pandas dataframe and Postrgres database.
+   4. **Synthesize**: Batch process/transformation with Spark
+   5. **Show**: Interactive Tableau website
 
 ## Zillow Automated Scraper
 ![](https://i.imgur.com/E6RI8Hm.gif)
