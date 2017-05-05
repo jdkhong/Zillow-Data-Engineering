@@ -23,3 +23,34 @@ Unemployment by zip code -> mapped by County data
 
 ## Zillow Data Architecture
 ![](https://i.imgur.com/bLuGWMj.png)
+
+# 8 properties for Big Data systems :
+#### Robustness and fault Tolerance
+
+
+
+#### Low latency reads and updates
+
+
+#### Scalability
+
+
+
+#### Generalization
+
+
+
+#### Extensibility
+
+Apart from the sysytems that store the raw data, any of the system can be replaced with a better ones if there are any available, or may be for a different application, using the same data.
+
+#### Ad hoc queries
+
+
+
+#### Minimal maintainance
+
+
+
+#### Debuggability
+
