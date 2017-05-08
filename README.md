@@ -12,7 +12,7 @@ Historical Real Estate sales by zip code since 2012
 Unemployment by zip code -> mapped by County data
 
 #### Big Data
-   1. **Stream**: Zillow data scrape current properties for sale and recently sold properties with daily airflow DAG.
+   1. **Stream**: Zillow data scrape current properties for sale and recently sold properties with daily airflow DAG on EC2.
    2. **Store**: Storage for unstructed HTML data for each listing in S3.
    3. **Structure**: Parse HTML data and store in S3. Use Apache Spark to put data into Postgres table.
    4. **Synthesize**: Batch process/transformation with Spark
