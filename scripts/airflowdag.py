@@ -13,7 +13,7 @@ default_args = {
 }
 
 dag = DAG(
-    'dag_1', default_args=default_args, schedule_interval='30 7 * * *')
+    'dag_1', default_args=default_args, schedule_interval='30 12 * * *')
 
 t1 = BashOperator(
     task_id='scrape_market',
