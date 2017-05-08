@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import time
 import zillow_functions as zl
 from bs4 import BeautifulSoup
@@ -93,63 +92,3 @@ scrape_data(temp)
 
 # Close the webdriver connection.
 zl.close_connection(driver)
-
-
-# For each home listing, extract the 11 variables that will populate that
-# specific observation within the output dataframe.
-
-# for n in range(len(listings)):
-#     soup = BeautifulSoup(listings[n], "html5lib")
-#     new_obs = []
-#
-#     # List that contains number of beds, baths, and total sqft (and
-#     # sometimes price as well).
-#     card_info = zl.get_card_info(soup)
-#
-#     # Street Address
-#     new_obs.append(zl.get_street_address(soup))
-#
-#     # Bathrooms
-#     new_obs.append(zl.get_bathrooms(card_info))
-#
-#     # Bedrooms
-#     new_obs.append(zl.get_bedrooms(card_info))
-#
-#     # City
-#     new_obs.append(zl.get_city(soup))
-#
-#     # Days on the Market/Zillow
-#     new_obs.append(zl.get_days_on_market(soup))
-#
-#     # Price
-#     new_obs.append(zl.get_price(soup, card_info))
-#
-#     # Sale Type (House for Sale, New Construction, Foreclosure, etc.)
-#     new_obs.append(zl.get_sale_type(soup))
-#
-#     # Sqft
-#     new_obs.append(zl.get_sqft(card_info))
-#
-#     # State
-#     new_obs.append(zl.get_state(soup))
-#
-#     # URL for each house listing
-#     new_obs.append(zl.get_url(soup))
-#
-#
-#     # Zipcode
-#     new_obs.append(zl.get_zipcode(soup))
-#
-#     # Append new_obs to df as a new observation
-#     if len(new_obs) == len(df.columns):
-#         df.loc[len(df.index)] = new_obs
-
-
-# # Write df to CSV.
-# columns = ['address', 'city', 'state', 'zip', 'price', 'sqft', 'bedrooms',
-#            'bathrooms', 'days_on_zillow', 'sale_type', 'url']
-#
-# df = df[columns]
-# dt = time.strftime("%Y-%m-%d") + "_" + time.strftime("%H%M%S")
-# filename = str(dt) + ".csv"
-# df.to_csv(filename, index=False)
