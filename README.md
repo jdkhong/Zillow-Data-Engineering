@@ -26,26 +26,25 @@ Unemployment by zip code -> mapped by County data
 
 # 8 properties for Big Data systems :
 #### Robustness and fault Tolerance
-
-
+All systems belong to AWS, which is highly robust. In addition, all systems integrates with one another. If the data scraping goes down, short-term functionality will be lost on the front-end, but the data itself will be safe in S3. One cause of concern is the possibility that Zillow stops the scraping. A resolution to this would be to work with the less efficient Zillow API.
 
 #### Low latency reads and updates
-
+Since the real estate sales cycle is relatively slow, there is no need for real time updates. 
 
 #### Scalability
-
-
+A majority of these technologies are fully scalable.
+S3 and Spark have high scalability. 
+In terms of a RDBMS, MySQL or SparkSQL might be a better fit than Postgres for better scalability.
+Tableau is also very scalable as it can be directly to servers, RDBMS, Spark, and multiple data sources.
 
 #### Generalization
-
-
+This data pipeline architecture is easily extendible for any scraping and can be reused for a lot of applications.
 
 #### Extensibility
 
 
 #### Ad hoc queries
-
-
+Postgres and Tableau will be used to do ad hoc queries. Both are very good at those types of tasks.
 
 #### Minimal maintainance
 
