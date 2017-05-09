@@ -51,4 +51,4 @@ Postgres and Tableau will be used to do ad hoc queries. Both are very good at th
 
 
 #### Debuggability
-
+The data will always be stored in complete form in S3, so bugs can be easily traced out. This allows the data to be restructured, and models recomputed if something goes wrong.
