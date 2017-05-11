@@ -1,8 +1,14 @@
 # Zillow Data Engineering End to End Pipeline
 
 ### Contents
-i) Scripts to to scrape and parse data
-ii) 
+I. EC2 - initiate a VM with a bootstrap to run essential scrips
+II. Scripts - to scrape and parse data. XGBoost Regression.
+III. Airflow - DAG setup
+IV. Spark - Pushing data to Postgres DB
+V. Presentation - All project objectives can be found here. Read to fidn SQL 3NF Database and Tableau visualizations. 
+
+[Click here for the interactive dashboard](https://jerrydatascience.tumblr.com/zillow-interactive)
+[Click here for the machine learning](https://jerrydatascience.tumblr.com/zillow-machine-learning)
 
 
 ### Brief Introduction
