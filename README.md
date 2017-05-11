@@ -39,7 +39,7 @@ Unemployment by zip code -> mapped by County data
 
 ### 8 properties of Big Data
 
-### Robustness and Fault Tolerance
+#### Robustness and Fault Tolerance
 All systems belong to AWS, which is highly robust. In addition, all systems integrates with one another. If the scraping goes down, data itself will be safe in S3. 
 
 #### Low latency reads and updates
