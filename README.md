@@ -9,7 +9,7 @@ III. Airflow - DAG setup
 
 IV. Spark - Pushing data to Postgres DB
 
-V. Presentation - All project objectives can be found here. Read to fidn SQL 3NF Database and Tableau visualizations. 
+V. Presentation - All project objectives can be found here!
 
 [Click here for the interactive dashboard](https://jerrydatascience.tumblr.com/zillow-interactive)
 
