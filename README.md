@@ -12,7 +12,8 @@ IV. Spark - Pushing data to Postgres DB
 V. Presentation - All project objectives can be found here. Read to fidn SQL 3NF Database and Tableau visualizations. 
 
 [Click here for the interactive dashboard](https://jerrydatascience.tumblr.com/zillow-interactive)
-[Click here for the machine learning](https://jerrydatascience.tumblr.com/zillow-machine-learning)
+
+[Click here for machine learning interactive map](https://jerrydatascience.tumblr.com/zillow-machine-learning)
 
 
 ### Brief Introduction
