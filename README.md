@@ -7,7 +7,7 @@ Initially, I was going to use Zillow's API, however, their API has limited data 
 i) Current For Sale Properties
 ii) Recently Sold Properties
 
-Historical Real Estate sales by zip code since 2012
+Historical Real Estate sales by zip code since 1996
 
 Unemployment by zip code -> mapped by County data
 
@@ -24,31 +24,27 @@ Unemployment by zip code -> mapped by County data
 ## Zillow Data Architecture
 ![](https://i.imgur.com/bLuGWMj.png)
 
-# 8 properties for Big Data systems :
-#### Robustness and fault Tolerance
-All systems belong to AWS, which is highly robust. In addition, all systems integrates with one another. If the data scraping goes down, short-term functionality will be lost on the front-end, but the data itself will be safe in S3. One cause of concern is the possibility that Zillow stops the scraping. A resolution to this would be to work with the less efficient Zillow API.
+## 8 properties of Big Data
 
-#### Low latency reads and updates
-Since the real estate sales cycle is relatively slow, there is no need for real time updates. 
+### Robustness and Fault Tolerance
+All systems belong to AWS, which is highly robust. In addition, all systems integrates with one another. If the scraping goes down, data itself will be safe in S3. 
 
-#### Scalability
-A majority of these technologies are fully scalable.
-S3 and Spark have high scalability. 
-In terms of a RDBMS, MySQL or SparkSQL might be a better fit than Postgres for better scalability.
-Tableau is also very scalable as it can be directly to servers, RDBMS, Spark, and multiple data sources.
+### Low latency reads and updates
+Since the real estate sales cycle is relatively slow, there is no need for real time updates.
 
-#### Generalization
-This data pipeline architecture is easily extendible for any scraping and can be reused for a lot of applications.
+### Scalability
+A majority of these technologies are fully scalable. S3 and Spark have high scalability. MySQL or SparkSQL might be a better fit than Postgres for scalability. Tableau is also very scalable.
 
-#### Extensibility
+### Generalization
+This data pipeline architecture is easily extendible for other scraping and can be reused.
 
+### Extensibility
+All of the systems in place support the addition of new data sources, features, and models.
 
-#### Ad hoc queries
-Postgres and Tableau will be used to do ad hoc queries. Both are very good at those types of tasks.
+### Ad hoc queries
+Postgres and Tableau will be used to do ad hoc queries. 
 
-#### Minimal maintainance
-
-
-
-#### Debuggability
-The data will always be stored in complete form in S3, so bugs can be easily traced out. This allows the data to be restructured, and models recomputed if something goes wrong.
+### Minimal maintenance
+This system is complex, and requires monitoring to make sure everything is running. I attempted to make an e-mail airflow DAG in case of errors. 
+### Debuggability
+Data will always be stored in complete form in S3, so bugs can be easily traced out. Ability for data to be restructured and models can be recomputed if something goes wrong.
