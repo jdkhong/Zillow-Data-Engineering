@@ -67,7 +67,3 @@ This system is complex, and requires monitoring to make sure everything is runni
 #### Debuggability
 Data will always be stored in complete form in S3, so bugs can be easily traced out. Ability for data to be restructured and models can be recomputed if something goes wrong.
 
-
-
-#### Acknowledgements
-My project was aided by the help of [Chris Muir's HTML parsing](https://github.com/ChrisMuir/Zillow) and [CoMartel's XGBoost Regression tutorial](https://www.kaggle.com/comartel/house-price-xgboost-starter/discussion/code).
