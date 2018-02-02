@@ -11,9 +11,7 @@ import xgboost as xgb
 from operator import itemgetter
 import time
 from sklearn import preprocessing
-############################################################################
-# Function to Write result in csv file to submit
-###########################################################################
+
 
 def write_to_csv(output,score):
     now = datetime.datetime.now()
